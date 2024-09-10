@@ -1,0 +1,48 @@
+/* Styl dla menu */
+.navbar {
+    background-color: green; /* Jasne tło */
+    box-shadow: 0 2px 4px rgba(10, 0, 0, 0.1); /* Delikatny cień */
+    padding: 10px 20px;
+}
+
+.navbar-item {
+    color: #333333; /* Ciemniejszy kolor tekstu */
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 20px;
+    text-transform: uppercase; /* Wszystkie litery duże */
+}
+
+.navbar-item:hover {
+    color: #100f0f; /* Niebieski kolor na hover */
+    background-color: transparent; /* Brak tła na hover */
+}
+
+.navbar-brand .navbar-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: #007BFF; /* Kolor głównego linku */
+}
+
+.navbar-brand .navbar-item:hover {
+    color: rgba(34, 38, 59, 0.5); /* Delikatnie ciemniejszy niebieski na hover */
+}
+
+.navbar-end {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-burger {
+    color: rgba(34, 38, 59, 0.5); /* Kolor ikonki menu w wersji mobilnej */
+}
+
+.navbar-burger:hover {
+    color: #007BFF;
+}
+
+/* Styl dla aktywnej pozycji menu */
+.navbar-item.is-active {
+    border-bottom: 2px solid #007BFF;
+    color: #007BFF;
+}
